@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 29
+   // buildToolsVersion "30.0.2"
 
     defaultConfig {
         applicationId "com.example.mvvm"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
@@ -34,7 +34,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation project(":libcommon")
+
     implementation project(':libnavannotation')
+    implementation 'org.jetbrains:annotations:15.0'
     annotationProcessor project(":libnavcompiler")
+
+    implementation project(":libcommon")
 }
