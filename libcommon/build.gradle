@@ -38,5 +38,6 @@ dependencies {
     api 'androidx.navigation:navigation-fragment:2.1.0'
     api 'androidx.navigation:navigation-ui:2.1.0'
 
-    
+    //fastjson解析
+    api 'com.alibaba:fastjson:1.2.59'
 }

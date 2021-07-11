@@ -1,5 +1,6 @@
 include ':libnavcompiler'
 include ':libnavannotation'
 include ':libcommon'
+include ':libnetwork'
 include ':app'
 rootProject.name = "Mvvm"
