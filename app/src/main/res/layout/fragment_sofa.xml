@@ -8,6 +8,6 @@
         android:layout_height="200dp"
         android:gravity="center"
         android:id="@+id/jump"
-        android:text="点击跳转"
+        android:text="沙发点击跳转"
         />
 </RelativeLayout>

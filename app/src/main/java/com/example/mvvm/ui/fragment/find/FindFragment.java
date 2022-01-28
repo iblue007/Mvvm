@@ -7,19 +7,18 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.example.libnavannotation.FragmentDestination;
 import com.example.mvvm.R;
 import com.example.mvvm.ui.AbsListFragment;
+import com.example.mvvm.ui.fragment.sofa.SofaFragment;
 
 @FragmentDestination(pageUrl = "main/tabs/find", asStarter = true)
-public class FindFragment extends AbsListFragment {
+public class FindFragment extends SofaFragment {
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_home,container,false);
-
-        return root;
+    public void onAttachFragment(@NonNull Fragment childFragment) {
+        super.onAttachFragment(childFragment);
     }
 }
